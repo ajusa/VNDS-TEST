@@ -2,6 +2,12 @@ label start
 text ~
 text This is an example novel that aims to fully test a VNDS implementation.
 
+label text
+text @This should appear
+text @This should appear automatically without advancing the text
+text @Also this appeared
+text This is a really long sentence that should somehow be wrapped. In fact it is so long that I cannot fathom why someone who was porting a visual novel would use it, but some people did and now I have to deal with it.
+
 label background
 bgload bg.jpg
 text You should be able to see a 2px yellow line on all sides
