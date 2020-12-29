@@ -1,0 +1,44 @@
+label start
+text ~
+text This is an example novel that aims to fully test a VNDS implementation.
+
+label background
+bgload bg.jpg
+text You should be able to see a 2px yellow line on all sides
+bgload bg.jpg 60
+text This should take about a second to load in
+
+label foreground
+setimg fg.png 0 0
+setimg fg.png 0 182
+setimg fg.png 246 0
+setimg fg.png 246 182
+setimg fg.png 123 91
+text Green boxes in four corners and middle (roughly)
+
+label sound
+sound test.ogg 1
+text Hear test once
+sound test.ogg 0
+text Shouldn't hear test
+sound test.ogg -1
+text Should keep hearing test until you click away
+sound ~
+text Hear nothing
+sound cutoff.mp3
+delay 60
+sound test.ogg
+text The first audio should have been cutoff
+
+label music
+music music.mp3
+text Should keep looping
+music ~
+music cutoff.mp3
+delay 60
+music music.mp3
+delay 60
+music ~
+text The first audio should have been cutoff
+
+goto start
