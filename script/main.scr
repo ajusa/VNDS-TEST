@@ -1,6 +1,9 @@
 label start
+gsetvar ccblue = "\x1b[34;1m"
+gsetvar cclose = "\x1b[0m"
 text ~
-text Colored x1b[32;1mdemon
+text Colored x1b[30;1mtestx1b[31;1mtestx1b[32;1mtest
+text As always, Sayuri's tone is $ccblue polite. $cclose
 text x1b[0m, text
 text This is an example novel that aims to fully test a VNDS implementation.
 label choice
